@@ -1,0 +1,73 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  nav {
+    background-color: #ddddff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+      color: #2222bb;
+      text-decoration: underline;
+      display: block;
+      :hover {
+        text-decoration: none;
+      }
+    }
+
+    @media screen and (max-width: 360px) {
+      flex-direction: column;
+
+      a {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .mainWrap {
+    flex: 1;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+
+    header {
+      padding: 2px 20px;
+      background-color: black;
+      color: white;
+      h1 {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+
+    main {
+      padding: 20px 20px;
+
+      pre {
+        background-color: #eeffee;
+        padding: 10px;
+        border: solid black 0.5px;
+        overflow: hidden;
+      }
+
+      form {
+        label {
+          margin-right: 20px;
+        }
+        input {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: black;
+    padding: 30px;
+    color: white;
+  }
+}
